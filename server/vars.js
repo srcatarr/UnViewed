@@ -1,0 +1,4 @@
+const vars = {
+    id: "",
+    lang: ""
+}
