@@ -14,6 +14,7 @@ class out {
         return o;
     }
 }
+let secCode = Math.floor(Math.random() * 1000000);
 
 function doGet(e) {
     vars.lang = e.parameter.lang;
@@ -27,17 +28,37 @@ function doGet(e) {
 }
 
 function login(mail) {
+    vars.mail = mail;
     const ss = SpreadsheetApp.openById(vars.id);
     const s = ss.getSheetByName("malls");
     s.getDataRange().getValues().forEach(element => {
         if (element[0] === mail)
             MailApp.sendEmail({
                 to: mail,
-                subject: translate("email.subject"),
-                htmlBody: translate("emil.htmlBody").replace(
-                    "SECURE_CODE", Math.floor(Math.random() * 1000000)
+                subject: translate("email", "subject"),
+                htmlBody: translate("emil", "htmlBody").replace(
+                    "SECURE_CODE", secCode
                 ),
                 noReply: true,
             })
     })
+}
+
+function controlSecCode(code) {
+    if (code === secCode) {
+        vars.isLoggedIn = true;
+        return true;
+    }
+    else return false;
+}
+
+function getMallData() {
+    if (vars.isLoggedIn) {
+        const ss = SpreadsheetApp.openById(vars.id);
+        const s = ss.getSheetByName("malls");
+        s.getDataRange().getValues().forEach(element => {
+            if (element[0] === vars.mail)
+                return element;
+        })
+    } else return false;
 }

@@ -4,6 +4,12 @@ const languages = {
             subject: "Girişinizi doğrulayın.",
             htmlBody: "Güvenlik kodunuz: SECURE_CODE"
         }
+    },
+    en: {
+        email: {
+            subject: "Access your log in.",
+            htmlBody: "Your security code: SECURE_CODE"
+        }
     }
 }
 

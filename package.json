@@ -1,0 +1,19 @@
+{
+  "name": "unviewed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaso09/unviewed.git"
+  },
+  "author": "Yasir Eymen KAYABAŞI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaso09/unviewed/issues"
+  },
+  "homepage": "https://github.com/yaso09/unviewed#readme"
+}
