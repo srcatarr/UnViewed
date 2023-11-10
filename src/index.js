@@ -11,7 +11,7 @@ app.get("/:lang/:src", function(req, res) {
     res.sendFile(
         __dirname + "/" +
         req.params.lang + "/" +
-        req.params.src + ".html"
+        req.params.src + "/index.html"
     )
 })
 
