@@ -1,4 +1,0 @@
-const vars = {
-    id: "",
-    lang: ""
-}
