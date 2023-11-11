@@ -27,10 +27,26 @@ app.get("/:lang/:src", function(req, res) {
                     __dirname + "/css/style.css"
                 )
                 break;
+            
+            case "main-script-js":
+                res.sendFile(
+                    __dirname + "/js/script.js"
+                )
+                break;
 
             default:
                 break;
         }
+    } else if (req.params.src === "p") {
+        res.sendFile(
+            __dirname + "/" +
+            req.params.lang + "/profile.html"
+        )
+    } else if (req.params.src === "app") {
+        res.sendFile(
+            __dirname + "/" +
+            req.params.lang + "/app.html"
+        )
     } else {
         res.sendFile(
             __dirname + "/" +
