@@ -43,22 +43,35 @@ app.get("/:lang/:src", function(req, res) {
             default:
                 break;
         }
-    } else if (req.params.src === "p") {
-        res.sendFile(
-            __dirname + "/" +
-            req.params.lang + "/profile.html"
-        )
-    } else if (req.params.src === "app") {
-        res.sendFile(
-            __dirname + "/" +
-            req.params.lang + "/app.html"
-        )
-    } else {
-        res.sendFile(
-            __dirname + "/" +
-            req.params.lang + "/" +
-            req.params.src + "/index.html"
-        )
+    } else switch (req.params.src) {
+        case "p":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/profile.html"
+            )
+            break;
+        
+        case "app":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/app.html"
+            )
+            break;
+        
+        case "admin":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/admin.html"
+            )
+            break;
+    
+        default:
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/" +
+                req.params.src + "/index.html"
+            )
+            break;
     }
 })
 
