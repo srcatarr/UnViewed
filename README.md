@@ -8,7 +8,7 @@ UnViewed (not named as unseen) is a project I developed with the help of my teac
 
 This platform, which serves as an audio map to assist disabled people, works with four basic stages;
 
-![Operating Logic Diagram](https://github.com/yaso09/UnViewed/assets/93262823/14be1df3-4432-4dd4-b737-f60e6509625e)
+![working-logic-scheme](https://github.com/yaso09/UnViewed/assets/93262823/8c0277ca-d783-4acd-a858-5d10ca3eae0b)
 
 In the second stage, the sink owner is provided with an admin panel, where he can add, remove and edit his sinks. He/she can also create and edit a unique profile on the platform. I predict that the profile creation and editing phase will encourage sink owners to use the platform as it will strengthen brand awareness.
 
