@@ -1,5 +1,56 @@
+[Bu makalenin Türkçe hali burada](OKUBENI.md)
+
 # UnViewed
 
-"UnViewed" (as it is named, meaning unseen) is a project I developed with the assistance of my teacher to aid individuals with visual impairments.  
+UnViewed (not named as unseen) is a project I developed with the help of my teacher to help visually impaired people. The project is designed for visually impaired people to find their way around sinks without any difficulty.
 
+## Overview
+
+This platform, which serves as an audio map to assist disabled people, works with four basic stages;
+
+![Operating Logic Diagram](https://github.com/yaso09/UnViewed/assets/93262823/14be1df3-4432-4dd4-b737-f60e6509625e)
+
+In the second stage, the sink owner is provided with an admin panel, where he can add, remove and edit his sinks. He/she can also create and edit a unique profile on the platform. I predict that the profile creation and editing phase will encourage sink owners to use the platform as it will strengthen brand awareness.
+
+It has the following systems;
+* Grabbing System (Creates the sink map by dragging objects)
+* Account System (Offers an account system)
+* Translator System (offers multi-language support to increase the accessibility of the platform)
+* Application (A single HTML file that can also work offline, this file is where the application converts the QR code into a map)
+
+### Contribute
+
+Your contributions to our project are very important to us! Although I am open to all contributions, I have to evaluate each pull request with my teacher since the project is not solely up to me.
+
+### Sponsorship
+
+It would be really nice if you sponsor my project on GitHub :) Sponsorship income will be given to things such as SSL TLS certificates, DDoS protection, domain name rent. In addition to this project, sponsorship income would be good for me, after all, I am a high school student.
+
+Although you can't contribute via sponsorship or pull request, you can also help by starring and/or forking the repository.
+
+### Licence
+
+The project currently has the ISC license used with Node.js. (See [ISC License](LICENSE))
+
+## Understanding the working logic
+
+### Beginning
+
+It uses [Google Apps Script](https://script.google.com) to run the server. Apps Script connects to the [Google SpreadSheets](https://docs.google.com/spreadsheets) table and processes the data through that table. So you need a Google account for Back-End to work. Front-End is written in standard Node.js and Express. I recommend [Vercel](https://vercel.com) to use.
+
+### Required Technologies
+
+The key technologies used by this project include:
+
+* [Node.js](https://nodejs.org)
+* [Express](https://expressjs.com)
+* [Clasp](https://github.com/google/clasp)
+* [Google Apps Script](https://script.google.com)
+* [Google SpreadSheets](https://docs.google.com/spreadsheets)
+
+## Start development
+
+These places are not available yet :) As you know, I have only worked on the project for two hours yet.
+
+# I wanted to put it here for fun
 https://github.com/yaso09/UnViewed/assets/93262823/9f80993a-7520-4e6f-ad63-98d5269daedb
