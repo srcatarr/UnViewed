@@ -2,7 +2,7 @@
 # UnViewed
 
 UnViewed (görülmediği gibi isimlendirilmedide) görme engellilere yardımcı olmak için öğretmenimin yardımıyla geliştirdiğim bir projedir. Proje, görme engellilerin lavabolarda zorluk yaşamadan yönlerini bulmaları için tasarlanmıştır.  
-[![](https://visitor-badge.laobi.icu/badge?page_id=yaso09)](#)
+[![](https://visitor-badge.laobi.icu/badge?page_id=yaso09.unviewed)](#)
 
 ## Genel Bakış
 

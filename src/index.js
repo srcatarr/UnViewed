@@ -33,6 +33,12 @@ app.get("/:lang/:src", function(req, res) {
                     __dirname + "/js/script.js"
                 )
                 break;
+            
+            case "tr-banner":
+                res.sendFile(
+                    __dirname + "/assets/tr-banner.gif"
+                )
+                break;
 
             default:
                 break;

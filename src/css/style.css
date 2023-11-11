@@ -1,5 +1,5 @@
 html, body {
-    background: rgb(48, 40, 160);
+    background: #fff;
 }
 
 #horizontal-menu {
@@ -11,4 +11,46 @@ html, body {
 
 #launch {
     border-radius: 25px;
+    padding: 5px 35px 5px 35px;
+    color: #fff;
+    background: #000;
+    border: 0;
+    transition: 0.2s;
+    right: 130px;
+    top: 20px;
+    position: fixed;
+}
+
+#download {
+    border-radius: 25px;
+    padding: 5px 35px 5px 35px;
+    color: #fff;
+    background: #198754;
+    border: 0;
+    transition: 0.2s;
+    right: 15px;
+    top: 20px;
+    position: fixed;
+}
+
+#launch:hover, #download:hover {
+    background: #373737;
+}
+
+#admin-login {
+    background: #0000009d;
+    padding: 0 5px 0 5px;
+    color: wheat;
+    font-size: 19px;
+    position: fixed;
+    right: 270px;
+    top: 25px;
+}
+
+#header {
+    background: #0000009d;
+    padding: 0 5px 0 5px;
+    color: wheat;
+    position: fixed;
+    top: 20px;
 }

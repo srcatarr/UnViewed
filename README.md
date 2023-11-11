@@ -3,7 +3,7 @@
 # UnViewed
 
 UnViewed (not named as unseen) is a project I developed with the support of my teacher to help visually impaired people. The project is designed for visually impaired people to find their way around sinks without any difficulty.  
-[![](https://visitor-badge.laobi.icu/badge?page_id=yaso09)](#)
+[![](https://visitor-badge.laobi.icu/badge?page_id=yaso09.unviewed)](#)
 
 ## Overview
 
