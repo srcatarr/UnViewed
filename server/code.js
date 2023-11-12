@@ -1,11 +1,11 @@
-class out {
-    href;
-    title;
-    constructor (href, title) {
+const out = {
+    href: "",
+    title: "",
+    constructor: (href, title) => {
         this.href = href;
         this.title = title;
-    }
-    val() {
+    },
+    val: () => {
         const o = HtmlService.createHtmlOutputFromFile(this.href);
         o
             .setSandboxMode(HtmlService.SandboxMode.IFRAME)
@@ -19,11 +19,19 @@ let secCode = Math.floor(Math.random() * 1000000);
 function doGet(e) {
     vars.lang = e.parameter.lang;
     if (e.parameter.page === "admin") {
-        const exit = new out("admin", "Admin");
-        return exit.val();
+        const o = HtmlService.createHtmlOutputFromFile("admin");
+        o
+            .setSandboxMode(HtmlService.SandboxMode.IFRAME)
+            .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+            .setTitle("Admin");
+        return o;
     } else {
-        const exit = new out("index", "Server-side");
-        return exit.val();
+        const o = HtmlService.createHtmlOutputFromFile("index");
+        o
+            .setSandboxMode(HtmlService.SandboxMode.IFRAME)
+            .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+            .setTitle("Server-Side");
+        return o;
     }
 }
 
