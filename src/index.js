@@ -64,6 +64,41 @@ app.get("/:lang/:src", function(req, res) {
                 req.params.lang + "/admin.html"
             )
             break;
+        
+        case "about-project":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/subtitles/about/about-project.html"
+            )
+            break;
+        
+        case "parents":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/subtitles/about/parents.html"
+            )
+            break;
+        
+        case "educators":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/subtitles/about/educators.html"
+            )
+            break;
+        
+        case "developers":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/subtitles/about/developers.html"
+            )
+            break;
+        
+        case "donate":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/subtitles/about/donate.html"
+            )
+            break;
     
         default:
             res.sendFile(
