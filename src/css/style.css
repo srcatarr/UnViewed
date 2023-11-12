@@ -54,3 +54,9 @@ html, body {
     position: fixed;
     top: 20px;
 }
+
+#select-lang {
+    padding: 3px 35px 3px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+}
