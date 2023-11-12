@@ -15,3 +15,11 @@ document.querySelector("#launch").addEventListener("click", function() {
 document.querySelector("#download").addEventListener("click", function() {
     window.location.href += "/download";
 })
+
+document.querySelector("#select-lang").addEventListener("change", function() {
+    window.localStorage.setItem(
+        "language", document.querySelector("#select-lang").value
+    ); window.location.href = window.location.href.replace(
+        window.location.pathname, ""
+    )
+})

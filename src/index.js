@@ -80,6 +80,10 @@ app.get("/:lang", function(req, res) {
         res.send(
             "<script>window.location.href = '../'</script>"
         )
+    } else if (req.params.lang === "subtitle") {
+        res.send(
+            "<script>window.location.href = '../'</script>"
+        )
     } else {
         res.sendFile(
             __dirname + "/" +
