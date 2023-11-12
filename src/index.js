@@ -39,6 +39,36 @@ app.get("/:lang/:src", function(req, res) {
                     __dirname + "/assets/tr-banner.gif"
                 )
                 break;
+            
+            case "visually-impaired-1":
+                res.sendFile(
+                    __dirname + "/assets/visually-impaired-1.jpg"
+                )
+                break;
+            
+            case "visually-impaired-2":
+                res.sendFile(
+                    __dirname + "/assets/visually-impaired-2.jpg"
+                )
+                break;
+            
+            case "visually-impaired-3":
+                res.sendFile(
+                    __dirname + "/assets/visually-impaired-3.jpg"
+                )
+                break;
+            
+            case "visually-impaired-4":
+                res.sendFile(
+                    __dirname + "/assets/visually-impaired-4.jpg"
+                )
+                break;
+            
+            case "visually-impaired-5":
+                res.sendFile(
+                    __dirname + "/assets/visually-impaired-5.jpg"
+                )
+                break;
 
             default:
                 break;
