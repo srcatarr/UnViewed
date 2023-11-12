@@ -70,3 +70,11 @@ function getMallData() {
         })
     } else return false;
 }
+
+function getPanelPage() {
+    const o = HtmlService.createHtmlOutputFromFile("panel");
+    return o.getContent();
+} function getAdminPage() {
+    const o = HtmlService.createHtmlOutputFromFile("admin");
+    return o.getContent();
+}
