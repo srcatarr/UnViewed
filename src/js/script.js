@@ -10,6 +10,8 @@ function getParam(name)  {
 
 document.querySelector("#launch").addEventListener("click", function() {
     window.location.href += "/app";
+});document.querySelector("#launch0").addEventListener("click", function() {
+    window.location.href += "/app";
 })
 
 document.querySelector("#download").addEventListener("click", function() {
