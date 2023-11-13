@@ -1,3 +1,4 @@
+let scriptProperties = PropertiesService.getScriptProperties();
 const out = {
     href: "",
     title: "",
@@ -15,9 +16,12 @@ const out = {
     }
 }
 let secCode = Math.floor(Math.random() * 1000000);
-
 function doGet(e) {
     vars.lang = e.parameter.lang;
+    languages.lang = e.parameter.lang;
+    scriptProperties.setProperty(
+        "lang", e.parameter.lang
+    )
     if (e.parameter.page === "admin") {
         const o = HtmlService.createHtmlOutputFromFile("admin");
         o
@@ -76,5 +80,8 @@ function getPanelPage() {
     return o.getContent();
 } function getAdminPage() {
     const o = HtmlService.createHtmlOutputFromFile("admin");
+    return o.getContent();
+} function getLoginPage() {
+    const o = HtmlService.createHtmlOutputFromFile("login");
     return o.getContent();
 }
