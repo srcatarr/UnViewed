@@ -1,21 +1,6 @@
 let scriptProperties = PropertiesService.getScriptProperties();
-const out = {
-    href: "",
-    title: "",
-    constructor: (href, title) => {
-        this.href = href;
-        this.title = title;
-    },
-    val: () => {
-        const o = HtmlService.createHtmlOutputFromFile(this.href);
-        o
-            .setSandboxMode(HtmlService.SandboxMode.IFRAME)
-            .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
-            .setTitle(this.title);
-        return o;
-    }
-}
 let secCode = Math.floor(Math.random() * 1000000);
+
 function doGet(e) {
     vars.lang = e.parameter.lang;
     languages.lang = e.parameter.lang;

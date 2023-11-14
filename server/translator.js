@@ -8,7 +8,7 @@ const languages = {
         login: {
             email_placeholder: "E-Posta Adresiniz",
             empty_email_err: "Lütfen bir e-posta adresi giriniz.",
-            wrong_email_err: "Lütfen gerçek bir e-posta adresi giriniz.",
+            invalid_email_err: "Lütfen gerçek bir e-posta adresi giriniz.",
             information: "Lavabo sahiplerinin bu panel üzerinden giriş yapması gerekmektedir.",
             button_val: "Giriş Yap",
             header: "Giriş"
@@ -22,8 +22,8 @@ const languages = {
         login: {
             email_placeholder: "E-Mail Adress",
             empty_email_err: "Please enter e-mail adress.",
-            wrong_email_err: "Lütfen gerçek bir e-posta adresi giriniz.",
-            information: "Lavabo sahiplerinin bu panel üzerinden giriş yapması gerekmektedir.",
+            invalid_email_err: "Please enter real e-mail adress.",
+            information: "Sink owners must log in via this panel.",
             button_val: "Log In",
             header: "Log In"
         }

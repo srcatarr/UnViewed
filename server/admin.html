@@ -1,5 +1,7 @@
 <html>
     <script>
+        let empty_email_err;
+        let invalid_email_err;
         function getLoginTransScript(element) {
             console.log(element);
             document.querySelector("#login").value =
@@ -10,11 +12,23 @@
                 element.login.email_placeholder;
             document.querySelector(".txt-admin-panel").innerHTML =
                 element.login.header;
-            emailErrTXTs.errEmpty = element.login.empty_email_err;
-        }
-        const emailErrTXTs = {
-            errEmpty: ""
-        }
+            empty_email_err = element.login.empty_email_err;
+            invalid_email_err = element.login.invalid_email_err;
+            }
+            function isValidEMail(element) {
+                if (
+                    element.search("@") > 0
+                ) {
+                    let email = element.split("@");
+                    email[1] = email[1].split(".");
+                    if (
+                        email[1].length == 2 &&
+                        email.length == 2 &&
+                        email[1][1].length > 0 &&
+                        email[1][0].length > 0
+                    ) {return true} else return false;
+                } else return false;
+            }
         if (window.localStorage.getItem("account")) {
             google.script.run.withSuccessHandler(getPanelPage).getPanelPage();
         } else {
@@ -35,7 +49,12 @@
             document.querySelector("#login").onclick = function() {
                 if (!document.querySelector("#email").value) {
                     document.querySelector("#error").innerHTML =
-                        "Lütfen bir e-posta adresi giriniz.";
+                        empty_email_err;
+                    addCloseErr();
+                    document.querySelector("#error").classList.add("bg-danger");
+                } else if (!isValidEMail(document.querySelector("#email").value)) {
+                    document.querySelector("#error").innerHTML =
+                        invalid_email_err;
                     addCloseErr();
                     document.querySelector("#error").classList.add("bg-danger");
                 }
