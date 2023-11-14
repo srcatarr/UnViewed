@@ -6,6 +6,7 @@
     <title>UnViewed | Görme engellilere yardım platformu</title>
     <link rel="stylesheet" href="../public/main-style-css">
     <link rel="stylesheet" href="../public/bootstrap-css">
+    <link rel="shortcut icon" href="../public/favicon" type="image/x-icon">
 </head>
 <body class="">
     <div id="horizontal-menu" class="p-3">
@@ -14,7 +15,8 @@
         <input class="" id="launch" type="button" value="Kullan">
         <input class="" id="download" type="button" value="İndir">
     </div>
-    <img src="../public/tr-banner" width="100%" height="100%">
+    <img id="banner" src="../public/tr-banner" width="100%" height="100%">
+    <input id="hide-banner" type="button" value="&#10060;">
     <article class="container p-5">
         <div class="row row-cols-2">
             <div class="col" style="text-align: right;">
@@ -185,8 +187,14 @@
                         <option value="en">English</option>
                     </select>
                 </form><br>
-                Yasir Eymen KAYABAŞI tarafından yapıldı ve bilişim öğretmenim başta olmak üzere yardımsever herkes tarafından geliştirildi.
-                </center>
+                Yasir Eymen KAYABAŞI tarafından yapıldı ve bilişim öğretmenim başta olmak üzere yardımsever herkes tarafından geliştirildi. <br><br>
+                <div id="banner-setter">
+                    <input id="show-banner" type="checkbox">
+                    <label for="show-banner">
+                        Bir dahaki açılışta kapağı göster.
+                    </label>
+                </div>
+            </center>
         </div>
     </footer>
     <script src="../public/main-script-js"></script>

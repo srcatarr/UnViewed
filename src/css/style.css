@@ -42,7 +42,10 @@ html, body {
     position: fixed;
 }
 
-#launch:hover, #download:hover, #launch0:hover {
+#launch:hover,
+#download:hover,
+#launch0:hover,
+#hide-banner:hover {
     background: #373737;
 }
 
@@ -68,4 +71,15 @@ html, body {
     padding: 3px 35px 3px 35px;
     border-radius: 10px;
     font-size: 20px;
+    cursor: pointer;
+} option {
+    cursor: pointer;
+}
+
+#hide-banner {
+    width: 100%;
+    border-radius: 0 0 25px 25px;
+    border: 0;
+    transition: 0.2s;
+    background: #000;
 }

@@ -69,6 +69,12 @@ app.get("/:lang/:src", function(req, res) {
                     __dirname + "/assets/visually-impaired-5.jpg"
                 )
                 break;
+            
+            case "favicon":
+                res.sendFile(
+                    __dirname + "/assets/favicon.png"
+                )
+                break;
 
             default:
                 break;

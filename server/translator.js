@@ -1,5 +1,4 @@
 const languages = {
-    lang: "",
     tr: {
         email: {
             subject: "Girişinizi doğrulayın.",

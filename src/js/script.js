@@ -25,3 +25,28 @@ document.querySelector("#select-lang").addEventListener("change", function() {
         window.location.pathname, ""
     )
 })
+
+document.querySelector("#hide-banner").addEventListener("click", function() {
+    document.querySelector("#banner").style.display = "none";
+    document.querySelector("#hide-banner").style.display = "none";
+    document.querySelector("#show-banner").style.display = "block";
+    window.localStorage.setItem("hide-banner", true);
+})
+
+if (window.localStorage.getItem("hide-banner")) {
+    document.querySelector("#banner").style.display = "none";
+    document.querySelector("#hide-banner").style.display = "none";
+    document.querySelector("#show-banner").style.display = "block";
+} else {
+    document.querySelector("#banner-setter").style.display = "none";
+}
+
+document.querySelector("#show-banner").addEventListener("change", function() {
+    const chckBox = document.querySelector("#show-banner");
+    let p = chckBox.checked;
+
+    if (p)
+        window.localStorage.setItem("hide-banner", "");
+    else
+        window.localStorage.setItem("hide-banner", true);
+})
