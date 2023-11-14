@@ -67,6 +67,11 @@ html, body {
     top: 20px;
 }
 
+.favicon {
+    border-radius: 50%;
+    width: 10rem;
+}
+
 #select-lang {
     padding: 3px 35px 3px 35px;
     border-radius: 10px;
@@ -82,4 +87,12 @@ html, body {
     border: 0;
     transition: 0.2s;
     background: #000;
+}
+
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 100px;
+    position: sticky;
+    transform: translateX(50%);
+    margin-left: -3px;
 }
