@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yönetici Paneli</title>
+    <link rel="stylesheet" href="../public/main-style-css">
+    <link rel="stylesheet" href="../public/bootstrap-css">
+    <style>
+        html, body {
+          height: 100%;
+          max-height: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        iframe {
+          position: sticky;
+          height: 100%;
+          width: 100%;
+          border: none;
+          z-index: 100;
+        }
+        footer {
+            position: relative;
+            bottom: 0;
+            z-index: 100;
+        }
+        #bg {
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            height: 120%;
+        }
+        #header {
+            position: relative;
+            top: 0;
+            z-index: 101;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="bg-success">
+    <div id="bg" class="bg-success"></div>
+    <div id="header" class="p-3 bg-dark">
+        <h3><a class="text-white" href="../">Eve Dön</a></h3>
+    </div>
+        <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/xtedHogWrRI"
+        ></iframe>
+    <footer class="container-fluid bg-success text-white p-2">
+        <div class="container">
+            <center>
+                <div class="row cols-4">
+                    <div class="col">
+                        <dl>
+                            <dt>
+                                <h3><span><b>Hakkında</b></span></h3>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="about-project">
+                                    <span>Proje Hakkında</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="parents">
+                                    <span>Ebeveynler İçin</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="educators">
+                                    <span>Eğitimciler İçin</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="developers">
+                                    <span>Geliştiriciler İçin</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="donate">
+                                    <span>Bağışçılar & Bağış</span>
+                                </a>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl>
+                            <dt>
+                                <h3><span><b>Topluluk</b></span></h3>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="community-guidelines">
+                                    <span>Topluluk Kuralları</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="discuss">
+                                    <span>Tartışma Forumları</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="wiki">
+                                    <span>Wiki</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="statistics">
+                                    <span>İstatistikler</span>
+                                </a>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl>
+                            <dt>
+                                <h3><span><b>Kaynaklar</b></span></h3>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="ideas">
+                                    <span>Fikirler</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="faq">
+                                    <span>SSS</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="download">
+                                    <span>İndir</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="contact-us">
+                                    <span>Bize Ulaşın</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="admin">
+                                    <span>Yönetici Paneli</span>
+                                </a>
+                            </dt>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl>
+                            <dt>
+                                <h3><span><b>Yasal</b></span></h3>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="terms-of-use">
+                                    <span>Kullanım Şartları</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="privacy-policy">
+                                    <span>Gizlilik Politikası</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="cookies">
+                                    <span>Çerezler</span>
+                                </a>
+                            </dt>
+                            <dt>
+                                <a class="text-white" href="DMCA">
+                                    <span>DMCA</span>
+                                </a>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+                <form novalidate>
+                    <select name="language" id="select-lang" aria-label="Dil Seçin" required>
+                        <option value="tr">Türkçe</option>
+                        <option value="en">English</option>
+                    </select>
+                </form><br>
+                Yasir Eymen KAYABAŞI tarafından yapıldı ve bilişim öğretmenim başta olmak üzere yardımsever herkes tarafından geliştirildi.
+            </center>
+        </div>
+    </footer>
+    <script src="../public/main-script-js"></script>
+    <script 
+        src="../public/bootstrap-js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+    ></script>
 </body>
 </html>
