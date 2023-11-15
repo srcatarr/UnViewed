@@ -91,8 +91,5 @@ html, body {
 
 .vertical-line {
     border-left: 1px solid #000;
-    height: 100px;
-    position: sticky;
-    transform: translateX(50%);
     margin-left: -3px;
 }
