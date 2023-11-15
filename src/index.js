@@ -75,6 +75,18 @@ app.get("/:lang/:src", function(req, res) {
                     __dirname + "/assets/favicon.png"
                 )
                 break;
+            
+            case "open-source-1":
+                res.sendFile(
+                    __dirname + "/assets/open-source-1.jpg"
+                )
+                break;
+
+            case "open-source-2":
+                res.sendFile(
+                    __dirname + "/assets/open-source-2.jpg"
+                )
+                break;
 
             default:
                 break;

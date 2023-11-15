@@ -25,9 +25,10 @@ html, body {
     border-radius: 25px;
     padding: 5px 100px 5px 100px;
     color: #fff;
-    background: #000;
     border: 0;
     transition: 0.2s;
+    width: 50%;
+    background: #198754;
 }
 
 #download {
@@ -44,9 +45,10 @@ html, body {
 
 #launch:hover,
 #download:hover,
-#launch0:hover,
 #hide-banner:hover {
     background: #373737;
+} #launch0:hover {
+    background: #126841;
 }
 
 #admin-login {
@@ -90,6 +92,6 @@ html, body {
 }
 
 .vertical-line {
-    border-left: 1px solid #000;
+    border-left: 1px solid #fff;
     margin-left: -3px;
 }
