@@ -174,3 +174,5 @@ app.get("/:lang", function(req, res) {
         )
     }
 })
+
+console.log("Server launching in: 3000");
