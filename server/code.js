@@ -48,10 +48,10 @@ function controlSecCode(code) {
     else return false;
 }
 
-function getMallData() {
+function getOwnerData() {
     if (vars.isLoggedIn) {
         const ss = SpreadsheetApp.openById(vars.id);
-        const s = ss.getSheetByName("malls");
+        const s = ss.getSheetByName("owners");
         s.getDataRange().getValues().forEach(element => {
             if (element[0] === vars.mail)
                 return element;

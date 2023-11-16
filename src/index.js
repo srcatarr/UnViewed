@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const fs = require("fs");
 
 app.listen(3000);
 
@@ -89,6 +90,18 @@ app.get("/:lang/:src", function(req, res) {
                 break;
 
             default:
+                fs.access(
+                    __dirname + "/" +
+                    req.params.lang + "/" +
+                    req.params.src + "/index.html",
+                    fs.constants.F_OK, (err) => {
+                        if (err) {
+                            res.sendFile(
+                                __dirname + "/404.html"
+                            )
+                        }
+                    }
+                )
                 break;
         }
     } else switch (req.params.src) {
@@ -156,10 +169,35 @@ app.get("/:lang/:src", function(req, res) {
             break;
     
         default:
-            res.sendFile(
+            fs.access(
                 __dirname + "/" +
-                req.params.lang + "/" +
-                req.params.src + "/index.html"
+                req.params.lang + "/index.html",
+                fs.constants.F_OK, (err) => {
+                    if (err) {
+                        res.sendFile(
+                            __dirname + "/404.html"
+                        )
+                    } else {            
+                        fs.access(
+                            __dirname + "/" +
+                            req.params.lang + "/" +
+                            req.params.src + "/index.html",
+                            fs.constants.F_OK, (err) => {
+                                if (err) {
+                                    res.sendFile(
+                                        __dirname + "/404.html"
+                                    )
+                                } else {
+                                    res.sendFile(
+                                        __dirname + "/" +
+                                        req.params.lang + "/" +
+                                        req.params.src + "/index.html"
+                                    )
+                                }
+                            }
+                        )
+                    }
+                }
             )
             break;
     }
@@ -175,9 +213,21 @@ app.get("/:lang", function(req, res) {
             "<script>window.location.href = '../'</script>"
         )
     } else {
-        res.sendFile(
+        fs.access(
             __dirname + "/" +
-            req.params.lang + "/index.html"
+            req.params.lang + "/index.html",
+            fs.constants.F_OK, (err) => {
+                if (err) {
+                    res.sendFile(
+                        __dirname + "/404.html"
+                    )
+                } else {
+                    res.sendFile(
+                        __dirname + "/" +
+                        req.params.lang + "/index.html"
+                    )
+                }
+            }
         )
     }
 })

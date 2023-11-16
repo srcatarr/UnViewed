@@ -1,4 +1,3 @@
 const vars = {
-    id: "",
-    lang: ""
+    id: ""
 }
