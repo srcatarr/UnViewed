@@ -13,6 +13,10 @@
         if (getParam("name") == null)
             window.location.href = "../";
         document.title = "Profil | " + getParam("name");
+        if (getParam("ticket") !== null)
+            document.title = "Etiket: " +
+                getParam("ticket") +
+                " | " + getParam("name")
     </script>
     <script 
         src="../public/bootstrap-js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -99,6 +99,13 @@ app.get("/:lang/:src", function(req, res) {
             )
             break;
         
+        case "s":
+            res.sendFile(
+                __dirname + "/" +
+                req.params.lang + "/sink.html"
+            )
+            break;
+        
         case "app":
             res.sendFile(
                 __dirname + "/" +
@@ -173,6 +180,34 @@ app.get("/:lang", function(req, res) {
             req.params.lang + "/index.html"
         )
     }
+})
+
+app.get("/:lang/p/:name", function(req, res) {
+    res.send(
+        "<script>window.location.href = '../p?name=" +
+        req.params.name + "'</script>"
+    )
+})
+
+app.get("/:lang/p/:name/:ticket", function(req, res) {
+    res.send(
+        "<script>window.location.href = '../../p?name=" +
+        req.params.name + "&ticket=" + req.params.ticket +
+        "'</script>"
+    )
+})
+
+app.get("/:lang/s/:sink", function(req, res) {
+    res.send(
+        "<script>window.location.href = '../s?sink=" +
+        req.params.sink + "'</script>"
+    )
+})
+
+app.use("*", function(req, res) {
+    res.status(404).sendFile(
+        __dirname + "/404.html"
+    )
 })
 
 console.log("Server launching in: 3000");
