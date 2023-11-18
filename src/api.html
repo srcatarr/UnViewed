@@ -1,5 +1,17 @@
 <script>
+function getParam(name)  {
+var url = window.location.href;
+name = name.replace(/[\[\]]/g, "\\$&");
+var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+results = regex.exec(url);
+if (!results) return null;
+if (!results[2]) return '';
+return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 let api_adress="https://api.github.com";
+if(getParam("adress")){
+api_adress+="&param="+getParam("adress");
+}
 fetch(api_adress)
 .then(dat=>dat.text())
 .then(text=>{
