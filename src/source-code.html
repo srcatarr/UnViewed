@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/bootstrap-css">
+    <style>
+        #pp {
+            animation: spin 1.5s infinite linear,
+                change-color 2s infinite alternate,
+                blink 1s infinite,
+                change-border-color 1s infinite;
+        }
+        @keyframes spin {
+            0%, 50% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+        @keyframes change-color {
+            0% {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2),
+                            0 0 20px rgba(255, 255, 255, 0.5);
+            }
+            25% {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.4),
+                            0 0 25px rgba(255, 255, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.6),
+                            0 0 30px rgba(255, 255, 255, 0.9);
+            }
+            75% {
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.8),
+                            0 0 35px rgba(255, 255, 255, 1);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(0, 0, 0, 1),
+                            0 0 40px rgba(255, 255, 255, 1);
+            }
+        }
+        @keyframes change-border-color {
+            0%, 100% {
+                border: 0.5rem solid #2ecc71;
+            }
+            50% {
+                border: 0.1rem solid #f39c12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center class="bg-white p-3"><br>
+        <img style="border-radius: 50%;" src="" id="pp"><br>
+        <h1 id="name"></h1>
+        <a id="html_url" class="text-black" href="#">
+            @<i id="login"></i>
+        </a><br>
+        <strong>
+            Hakkında:&nbsp;<strong id="bio"></strong>
+        </strong><br>
+        <strong>
+            Adres:&nbsp;<strong id="location"></strong>
+        </strong>
+    </center>
+    <script src="public/github-js"></script>
+    <script>
+        function main(data) {
+            console.log(data);
+            document.querySelector("#pp").src = data.avatar_url;
+            document.querySelector("#name").append(data.name);
+            document.querySelector("#bio").append(data.bio);
+            document.querySelector("#location").append(data.location);
+            document.querySelector("#login").append(data.login);
+            document.querySelector("#html_url").href = data.html_url;
+        }
+        github("users/yaso09", main);
+
+        document.body.addEventListener("keypress", function(key) {
+            console.log(key.key);
+            if (String(key.key) === "s") {
+                document.querySelector("body").className = "bg-dark text-white";
+                document.querySelector("center").className = "bg-dark text-white";
+                document.querySelector("a").className = "text-white";
+            } if (String(key.key) === "b") {
+                document.querySelector("body").className = "bg-white text-black";
+                document.querySelector("center").className = "bg-white text-black";
+                document.querySelector("a").className = "text-black";
+            } if (String(key.key) === "t")
+                document.querySelector("center").requestFullscreen();
+        })
+        if (
+            window.prompt("Bir geliştirici hata ile karşılaştığında ne der?") === "kodumun hatası"
+        ) {
+            window.alert("NASIL BİLDİN LAN??!?!?");
+        } else {
+            window.alert("Hehe bildin hehe");
+        }
+    </script>
+    <script src="public/main-script-js"></script>
+</body>
+</html>

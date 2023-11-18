@@ -1,0 +1,17 @@
+{
+    "route_map": "/route",
+    "api_route": "/api",
+    "main_route": "/",
+    "languages_main_route": "/{language}",
+    "application": "/{language}/app",
+    "admin": "/{language}/admin",
+    "public_route": "/public/{file}",
+    "profile_1": "/{language}/p?name={profile_name}",
+    "profile_2": "/{language}/p/{name}",
+    "sink_1": "/{language}/s?sink={sink_number}",
+    "sink_2": "/{language}/s/{name}",
+    "ticket_1": "/{language}/p?name={profile_name}&ticket={ticket}",
+    "ticket_2": "/{language}/p/{profile_name}/{ticket}",
+    "article_1": "/{language}/t?name={name}",
+    "article_2": "/{language}/t/{name}"
+}

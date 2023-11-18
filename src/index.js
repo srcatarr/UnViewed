@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
+const { raw } = require("mysql");
 
 app.listen(3000);
 
@@ -86,6 +87,12 @@ app.get("/:lang/:src", function(req, res) {
             case "open-source-2":
                 res.sendFile(
                     __dirname + "/assets/open-source-2.jpg"
+                )
+                break;
+            
+            case "github-js":
+                res.sendFile(
+                    __dirname + "/js/github-rest.js"
                 )
                 break;
 
@@ -211,6 +218,18 @@ app.get("/:lang", function(req, res) {
     } else if (req.params.lang === "subtitle") {
         res.send(
             "<script>window.location.href = '../'</script>"
+        )
+    } else if (req.params.lang === "source-code") {
+        res.sendFile(
+            __dirname + "/source-code.html"
+        )
+    } else if (req.params.lang === "route") {
+        res.sendFile(
+            __dirname + "/route.json"
+        )
+    } else if (req.params.lang === "api") {
+        res.sendFile(
+            __dirname + "/api.html"
         )
     } else {
         fs.access(

