@@ -62,7 +62,7 @@ Test etmek için makinenizde Node.js olmalı.
 
     npm test
 
-Program http://localhost:3000/ adresinden çalışmaya başlayacak.
+Program http://localhost:3000/ adresinden çalışmaya başlayacaktır.
 
 ## Kaliteli Kullanım
 Ürünü kaliteli kullanma teknikleri (Şimdilik sadece Türkçe için)
