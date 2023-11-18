@@ -50,7 +50,19 @@ Bu projenin kullandığı temel teknolojiler şunları içerir:
 
 ## Geliştirmeye başlamak
 
-Buralar şimdilik yok :) malum henüz proje için sadece iki saat uğraştım
+Bi'bismillah çekelim. Öncelikle makinenizde Git kurulu olmalı.
+
+    git clone https://github.com/yaso09/UnViewed.git
+    cd UnViewed
+    npm install
+
+### Test Etmek
+
+Test etmek için makinenizde Node.js olmalı.
+
+    npm test
+
+Program http://localhost:3000/ adresinden çalışmaya başlayacak.
 
 ## Kaliteli Kullanım
 Ürünü kaliteli kullanma teknikleri (Şimdilik sadece Türkçe için)
