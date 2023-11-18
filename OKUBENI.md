@@ -52,5 +52,10 @@ Bu projenin kullandığı temel teknolojiler şunları içerir:
 
 Buralar şimdilik yok :) malum henüz proje için sadece iki saat uğraştım
 
+## Kaliteli Kullanım
+Ürünü kaliteli kullanma teknikleri (Şimdilik sadece Türkçe için)
+* "/route" ve "/api" adresleri API'e bağlandığı için normalde görünürde olmayan özellikleri keşfedebilirsiniz. Örneğin gizlice koyduğum ve [GitHub Profilime](https://github.com/yaso09) atıf yapan "/source-code" sayfasını ben burada yazmasaydım ve bu adreslerde gezmeseydiniz ASLA BULAMAYACAKTINIZ!
+* Çevrimdışı kullanım. Söylemeye gerek yok bile. Tabii ki çevrimiçi kullandığınız zaman sunucuya bağlanıp verileri çekebildiği için elektrikler kesik mi, sular kesik mi gibi sorulara cevap bulabilirsiniz.
+
 # Burayı eğlencesine koymak istedim
 https://github.com/yaso09/UnViewed/assets/93262823/2e096e82-6b04-4b55-96d3-363af58cf24e
