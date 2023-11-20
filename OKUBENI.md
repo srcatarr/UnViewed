@@ -36,7 +36,7 @@ Proje şimdilik Node.js ile kullanılan ISC lisansına sahip. (Bknz. [ISC Lisans
 
 ### Başlangıç
 
-Sunucuyu çalıştırmak için [Google Apps Script](https://script.google.com) kullanır. Apps Script, [Google SpreadSheets](https://docs.google.com/spreadsheets) tablosuna bağlanır ve verilere o tablo üzerinden işler. Yani Back-End'in çalışması için bir Google hesabına ihtiyacınız var. Front-End ise standart Node.js ve Express ile yazılmıştır. Kullanmak için [Vercel](https://vercel.com)'i öneririm.  
+Sunucuyu çalıştırmak için [Google Apps Script](https://script.google.com) kullanır. Apps Script, [Google SpreadSheets](https://docs.google.com/spreadsheets) tablosuna bağlanır ve verilere o tablo üzerinden işler. Yani Back-End'in çalışması için bir Google hesabına ihtiyacınız var. Front-End ise standart Node.js ve Express ile yazılmıştır. Kullanmak için [Vercel](https://vercel.com)'i ve [Replit](https://replit.com)'i öneririm.  
 
 ### Gerekli Teknolojiler
 
@@ -50,7 +50,7 @@ Bu projenin kullandığı temel teknolojiler şunları içerir:
 
 ## Geliştirmeye başlamak
 
-Bi'bismillah çekelim. Öncelikle makinenizde Git kurulu olmalı.
+Bi'bismillah çekelim. Öncelikle makinenizde Git ve Nod.js kurulu olmalı. Back-End'in de çalışması için bir Google hesabına ihtiyaç duyuyoruz. Google tarafından sağlanan Apps Script, SpreadSheets ve GMail'i kullanacağız.
 
     git clone https://github.com/yaso09/UnViewed.git
     cd UnViewed
