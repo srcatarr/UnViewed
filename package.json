@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yaso09/unviewed/issues"
   },
-  "homepage": "https://github.com/yaso09/unviewed#readme"
+  "homepage": "https://github.com/yaso09/unviewed#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
