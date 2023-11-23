@@ -1,5 +1,6 @@
 let scriptProperties = PropertiesService.getScriptProperties();
 let secCode = Math.floor(Math.random() * 1000000);
+PropertiesService.setProperty("security_code", secCode);
 function doGet(e) {
     vars.lang = e.parameter.lang;
     languages.lang = e.parameter.lang;

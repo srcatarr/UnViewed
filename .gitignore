@@ -1,3 +1,4 @@
 .clasp.json
 server/appsscript.json
 node_modules/
+.env

@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
-const { raw } = require("mysql");
+require("dotenv").config();
+
+console.log(process.env.GS_ID);
 
 app.listen(3000);
 
@@ -230,6 +232,10 @@ app.get("/:lang", function(req, res) {
     } else if (req.params.lang === "api") {
         res.sendFile(
             __dirname + "/api.html"
+        )
+    } else if (req.params.lang === "beta") {
+        res.send(
+            String(process.env.GS_ID)
         )
     } else {
         fs.access(
