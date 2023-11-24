@@ -21,9 +21,9 @@ if %1==install (
         )
     ) else (
         if exist node_modules/%2 (
-            npm add %2
-        ) else (
             echo This module already installed
+        ) else (
+            npm add %2
         )
     )
 )
