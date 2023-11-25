@@ -55,14 +55,9 @@ These places are not available yet :) As you know, I have only worked on the pro
 
 ## Contributors
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<a href="https://github.com/yaso09/unviewed/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yaso09/unviewed" />
+</a>
 
 # I wanted to put it here for fun
 https://github.com/yaso09/UnViewed/assets/93262823/9f80993a-7520-4e6f-ad63-98d5269daedb

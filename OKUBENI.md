@@ -156,14 +156,9 @@ Program http://localhost:3000/ adresinden çalışmaya başlayacaktır.
 
 ## Katkıda Bulunanlar
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<a href="https://github.com/yaso09/unviewed/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yaso09/unviewed" />
+</a>
 
 # Burayı eğlencesine koymak istedim
 
