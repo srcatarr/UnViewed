@@ -1,35 +1,29 @@
-# Server commandline interface for Linux
-# Ama linux shell kullanmayı doğru düzgün bilmiyorum 
-# bu yüzden burayı arkadaşıma yazdıracağım
+# Server Commandline Interface for Linux
 
 #!/bin/bash
 
-echo "ServerCI needs NodeJS"
-
 if ["$1" == ""]; then
-    # Utku'ya bırakıyorum
+    echo UnViewed ServerCI v0.0.0.1 Copyright C 2023 Yasir Eymen KAYABAŞI
+    echo Type "help" for more information
+    exit -b 0
 fi
 
-if ["$1" == "run"]; then
-    if [-d "node_modules"]; then
-        node src/index.js
-    else
-        npm install
-        node src/index.js
-    fi
-fi
-
-if ["$1" == "install"]; then
+if ["$1" == "-install"]; then
     if ["$2" == ""]; then
-        if [-z "node_modules"]; then
+        if [-e node_modules]; then
+            echo Node modules already installed
+            exit -b 0
+        else
+            npm install
+            exit -b 0
         fi
     else
-        if [-z "node_modules/$2"]; then
+        if [-e node_modules/$2]; then
             echo This module already installed
+            exit -b 0
         else
             npm add $2
-fi
-
-if ["$1" == "update"]; then
-    npm update
-fi
+            exit -b 0
+        fi
+    fi
+fi # Buralarda else kullan

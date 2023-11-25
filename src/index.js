@@ -4,7 +4,7 @@ const fs = require("fs");
 const dotenv = require("dotenv");
 dotenv.config();
 
-app.listen(3000);
+app.listen(process.env.PORT);
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/index.html");
@@ -280,4 +280,5 @@ app.use("*", function(req, res) {
     )
 })
 
-console.log("Server launching in: " + app.port + " port");
+console.log("Server launching in: " + process.env.PORT + " port \n");
+console.log("http://localhost:" + process.env.PORT);
