@@ -31,7 +31,7 @@ If you won't contribute as sponsorship or pull request, you can also help by sta
 
 ### Licence
 
-The project currently has the ISC license used with Node.js. (See [ISC License](LICENSE))
+The project uses GPL-3.0 license. (See [GPL-3.0 License](LICENSE))
 
 ## Understanding the working logic
 
@@ -52,6 +52,17 @@ The key technologies used by this project include:
 ## Start development
 
 These places are not available yet :) As you know, I have only worked on the project for two hours yet.
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 # I wanted to put it here for fun
 https://github.com/yaso09/UnViewed/assets/93262823/9f80993a-7520-4e6f-ad63-98d5269daedb

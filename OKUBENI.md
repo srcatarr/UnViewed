@@ -63,7 +63,7 @@ Her ne kadar sponsorlukla veya çekme isteği ile katkıda bulunamayacak olsanı
 
   
 
-Proje şimdilik Node.js ile kullanılan ISC lisansına sahip. (Bknz. [ISC Lisansı](LICENSE))
+Proje GPL-3.0 lisansını kullanıyor. (Bknz. [GPL-3.0 Lisansı](LICENSE))
 
   
 
@@ -154,7 +154,16 @@ Program http://localhost:3000/ adresinden çalışmaya başlayacaktır.
 
 * Çevrimdışı kullanım. Söylemeye gerek yok bile. Tabii ki çevrimiçi kullandığınız zaman sunucuya bağlanıp verileri çekebildiği için elektrikler kesik mi, sular kesik mi gibi sorulara cevap bulabilirsiniz.
 
-  
+## Katkıda Bulunanlar
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 # Burayı eğlencesine koymak istedim
 
