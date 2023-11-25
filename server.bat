@@ -1,6 +1,25 @@
 :: Server commandline interface for Windows
 @echo off
 
+set null=false
+
+if "%1"=="" (
+    set null=true
+)
+
+if %null%==true (
+    echo UnViewed ServerCI v0.0.0.1
+    echo Type "help" for more information
+    :a
+    set cmd=""
+    set /p cmd="> "
+    if %cmd%==exit (
+        exit /b 0
+    )
+    goto:a
+    exit /b 0
+)
+
 if %1==run  (
     if exist node_modules (
         node src/index.js
@@ -49,7 +68,7 @@ if %1==login (
         ) else (
             echo Logging in
             echo # Google Apps Script Project ID>>.env
-            echo GS_ID=%anan%
+            echo GS_ID=%2
             exit /b 0
         )
     )
@@ -58,21 +77,12 @@ if %1==login (
 if %1==compile (
     :: Burası şimdilik dursun
     echo.
+    exit /b 0
 )
 
 if %1==version (
     echo UnViewed ServerCI version 0.0.0.1
+    exit /b 0
 )
 
-if "%1"=="" (
-    echo ServerCI v0.0.0.1
-    set /p cmd=
-    if %cmd%==run (
-        if exist node_modules (
-            node src/index.js
-        ) else (
-            npm install
-            node src/index.js
-        )
-    )
-)
+exit /b 0
