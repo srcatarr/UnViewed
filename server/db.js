@@ -4,4 +4,4 @@ function open(page) {}
 
 function send(clss, obj, val) {}
 
-function get() {}
+function get(obj) {}
