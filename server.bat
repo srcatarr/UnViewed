@@ -18,7 +18,7 @@ if %null%==true (
 )
 :: Boş ise yapılacaklar burada bitiyor
 
-if %1==-run  (
+if %1==--run  (
     if exist node_modules (
         node src/index.js
         exit /b 0
@@ -27,7 +27,7 @@ if %1==-run  (
         node src/index.js
         exit /b 0
     )
-) else if %1==-install (
+) else if %1==--install (
     if "%2"=="" (
         if exist node_modules (
             echo Node modules already installed
@@ -45,7 +45,7 @@ if %1==-run  (
             exit /b 0
         )
     )
-) else if %1==-update (
+) else if %1==--update (
     npm update
     echo Updated to latest version
     exit /b 0
@@ -66,33 +66,33 @@ if %1==-run  (
             exit /b 0
         )
     )
-) else if %1==-compile (
+) else if %1==--compile (
     cd src/ts
     npx tsc
     cd ..
     cd ..
-) else if %1==-decompile (
+) else if %1==--decompile (
     cd src/ts
     del db.js
     echo Codes decompiled
     cd ..
     cd ..
-) else if %1==-version (
+) else if %1==--version (
     echo UnViewed ServerCI Version 0.0.0.1
     exit /b 0
-) else if %1==-help (
+) else if %1==--help (
     echo ServerCI: The Commandline Interface For UnViewed Server - Version 0.0.0.1
     echo.
     echo COMMANDS
     echo.
-    echo    -help        More information about ServerCI.
-    echo    -version     Learn version.
-    echo    -install     Install packages.
-    echo    -run         Run server in localhost.
-    echo    -update      Update NodeJS and ServerCI.
-    echo    -login       Login to Google Apps Script.
-    echo    -compile     Compile codes to run.
-    echo    -decompile   Decompile codes to run.
+    echo    --help        More information about ServerCI.
+    echo    --version     Learn version.
+    echo    --install     Install packages.
+    echo    --run         Run server in localhost.
+    echo    --update      Update NodeJS and ServerCI.
+    echo    --login       Login to Google Apps Script.
+    echo    --compile     Compile codes to run.
+    echo    --decompile   Decompile codes to run.
 ) else (
     echo An error occurred: This command not found
 )
