@@ -280,4 +280,4 @@ app.use("*", function(req, res) {
     )
 })
 
-console.log("Server launching in: 3000");
+console.log("Server launching in: " + app.port + " port");
