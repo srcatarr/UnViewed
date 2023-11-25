@@ -13,7 +13,7 @@ if "%1"=="" (
 
 if %null%==true (
     echo UnViewed ServerCI v0.0.0.1 Copyright C 2023  Yasir Eymen KAYABASI
-    echo Type "help" for more information
+    echo Type "-help" for more information
     exit /b 0 && rem Bu "exit /b 0" kavrammı Bash'de "exit 0" anlamına geliyor
 )
 :: Boş ise yapılacaklar burada bitiyor
