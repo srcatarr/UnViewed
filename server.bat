@@ -3,6 +3,22 @@
 
 echo ServerCI needs NodeJS 
 
+if "%1"=="" (
+    echo ServerCI v0.0.0.1
+    set /p cmd=
+    if %cmd%==run (
+        if exist node_modules (
+            node src/index.js
+        ) else (
+            npm install
+            node src/index.js
+        )
+    )
+    if %cmd%==install (
+        
+    )
+)
+
 if %1==run  (
     if exist node_modules (
         node src/index.js
