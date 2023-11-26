@@ -9,7 +9,7 @@ UnViewed (not named as unseen) is a project I developed with the support of my t
 
 This platform, which serves as an audio map to assist disabled people, works with four basic stages;
 
-![working-logic-scheme](https://github.com/yaso09/UnViewed/assets/93262823/8c0277ca-d783-4acd-a858-5d10ca3eae0b)
+![working-logic-scheme](https://github.com/srcatarr/UnViewed/assets/93262823/8c0277ca-d783-4acd-a858-5d10ca3eae0b)
 
 In the second stage, the sink owner is provided with an admin panel, where he can add, remove and edit his sinks. He can also create and edit an unique profile on the platform. I predict that the profile creation and editing phase will encourage sink owners to use the platform as it will strengthen brand awareness.
 
@@ -55,9 +55,9 @@ These places are not available yet :) As you know, I have only worked on the pro
 
 ## Contributors
 
-<a href="https://github.com/yaso09/unviewed/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yaso09/unviewed" />
+<a href="https://github.com/srcatarr/UnViewed/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=srcatarr/UnViewed" />
 </a>
 
 # I wanted to put it here for fun
-https://github.com/yaso09/UnViewed/assets/93262823/9f80993a-7520-4e6f-ad63-98d5269daedb
+https://github.com/srcatarr/UnViewed/assets/93262823/9f80993a-7520-4e6f-ad63-98d5269daedb

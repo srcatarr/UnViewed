@@ -19,7 +19,7 @@ Engellilere yardımcı olmak için sesli harita görevi gören bu platform, dör
 
   
 
-![Çalışma Mantığı Şema](https://github.com/yaso09/UnViewed/assets/93262823/14be1df3-4432-4dd4-b737-f60e6509625e)
+![Çalışma Mantığı Şema](https://github.com/srcatarr/UnViewed/assets/93262823/14be1df3-4432-4dd4-b737-f60e6509625e)
 
   
 
@@ -107,7 +107,7 @@ Bi'bismillah çekelim. Öncelikle makinenizde Git ve Node.js kurulu olmalı.
 
   
 
-    git clone https://github.com/yaso09/UnViewed.git
+    git clone https://github.com/srcatarr/UnViewed.git
     cd UnViewed
     server install
 
@@ -133,7 +133,7 @@ Eğer gerekli paketler kurulu değilse kuracaktır. (Bu arada evet, kendi komut 
 
 Eğer ```server``` komutu çalışmazsa kurulum için bu komutları kullanın;
 
-    git clone https://github.com/yaso09/UnViewed.git
+    git clone https://github.com/srcatarr/UnViewed.git
     cd UnViewed
     npm install
 
@@ -156,10 +156,10 @@ Program http://localhost:3000/ adresinden çalışmaya başlayacaktır.
 
 ## Katkıda Bulunanlar
 
-<a href="https://github.com/yaso09/unviewed/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yaso09/unviewed" />
+<a href="https://github.com/srcatarr/UnViewed/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=srcatarr/UnViewed" />
 </a>
 
 # Burayı eğlencesine koymak istedim
 
-https://github.com/yaso09/UnViewed/assets/93262823/2e096e82-6b04-4b55-96d3-363af58cf24e
+https://github.com/srcatarr/UnViewed/assets/93262823/2e096e82-6b04-4b55-96d3-363af58cf24e

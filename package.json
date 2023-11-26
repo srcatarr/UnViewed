@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yaso09/unviewed.git"
+    "url": "git+https://github.com/srcatarr/unviewed.git"
   },
   "author": "Yasir Eymen KAYABAŞI",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/yaso09/unviewed/issues"
+    "url": "https://github.com/srcatarr/unviewed/issues"
   },
-  "homepage": "https://github.com/yaso09/unviewed#readme",
+  "homepage": "https://github.com/srcatarr/unviewed#readme",
   "dependencies": {
     "@google/clasp": "^2.4.2",
     "dotenv": "^16.3.1",
