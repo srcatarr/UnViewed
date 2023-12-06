@@ -11,6 +11,9 @@ const languages = {
             information: "Lavabo sahiplerinin bu panel üzerinden giriş yapması gerekmektedir.",
             button_val: "Giriş Yap",
             header: "Giriş"
+        },
+        newSink: {
+            name: "Lavabo ismi"
         }
     },
     en: {
